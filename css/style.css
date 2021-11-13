@@ -624,6 +624,7 @@ body {
   }
 
   .ticker {
+    border: none;
     width: 100%;
     font-size: 25px;
     line-height: 31px;
