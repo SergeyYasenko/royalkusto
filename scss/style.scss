@@ -1,0 +1,835 @@
+//=================================Обнуление=============================================================
+
+@import "nullstyle.scss";
+
+//=================================ОБЩИЙ КОНТЕЙНЕР=============================================================
+
+body {
+   background-color: #131313;
+}
+
+.wrapper {
+   min-height: 100%;
+   margin: 0 auto;
+}
+
+.header {
+}
+
+.bg-gif {
+   height: 100%;
+   width: 100%;
+   background: url("../img/bg/bg.gif");
+   opacity: 0.05;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+
+//=================================HEADER=============================================================
+
+.container {
+   max-width: 1570px;
+   padding: 0px 15px;
+   margin: 0 auto;
+   border-right: 2px solid #ffffff;
+   border-left: 2px solid #ffffff;
+   position: relative;
+   z-index: 2;
+}
+
+.header {
+   &__container {
+      display: flex;
+      align-items: center;
+      padding: 45px 0px 40px 0px;
+      border-bottom: 1px solid #fff;
+   }
+
+   &__main-block {
+   }
+
+   &__logo {
+      margin: 0px 0px 0px 60px;
+   }
+
+   &__title {
+      font-family: "DrukWideCyWebBold";
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 66px;
+      color: #f3f3f3;
+      padding: 0px 31px 0px 33px;
+   }
+}
+
+//=================================MAIN=============================================================
+
+//=================================1 BLOCK=============================================================
+
+.main {
+   &__container {
+      border-right: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
+      padding: 0px;
+   }
+
+   &__block {
+   }
+}
+
+.block {
+   &__row {
+   }
+
+   &__info {
+      display: flex;
+   }
+
+   &__column-1 {
+      background: url("../img/icons/injection_b_r.svg") 36% 52% no-repeat;
+   }
+
+   &__column-2 {
+      background: url("../img/icons/injection_t_l.svg") 8% 32% no-repeat;
+   }
+
+   &__column-3 {
+      background: url("../img/icons/injection_t_r.svg") 45% 32% no-repeat;
+   }
+
+   &__title {
+   }
+
+   &__text {
+   }
+}
+
+.title {
+   &__block {
+      font-family: "DrukWideCyWebBold";
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: #f3f3f3;
+      padding: 0px 0px 13px 0px;
+   }
+}
+
+.column {
+   &__block {
+      flex: 1 1 33.333%;
+      border: 1px solid #ffffff;
+      padding: 67px 75px 67px 50px;
+   }
+}
+
+//=================================2 BLOCK=============================================================
+
+.benefits {
+   &__block-info {
+      display: flex;
+   }
+
+   &__block {
+      display: flex;
+      flex: 1 1 33.333%;
+   }
+
+   &__block-column {
+      transition: all 0.3s ease;
+   }
+
+   &__block-column:hover {
+      background-color: #fff;
+      position: relative;
+   }
+
+   &__block-column:hover .benefits__title {
+      color: #131313;
+   }
+
+   &__block-column:hover .benefits__text {
+      color: #131313;
+   }
+
+   &__block-column:hover::before {
+      content: url("../img/icons/injection_h_b_r.svg");
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+   }
+
+   &__block-column:hover::after {
+      content: url("../img/icons/injection_h_t_l.svg");
+      position: absolute;
+      top: 15px;
+      left: 15px;
+   }
+
+   &__title {
+      font-family: "DrukWideCyWebBold";
+      font-size: 20px;
+      line-height: 24px;
+      color: #f3f3f3;
+      padding: 0px 0px 20px 0px;
+   }
+
+   &__text {
+   }
+}
+
+.column {
+   &__block {
+   }
+}
+
+.text__title {
+   font-family: "DrukWideCyWebBold";
+   font-size: 36px;
+   line-height: 44px;
+   color: #f3f3f3;
+   padding: 0px 0px 5px 100px;
+}
+
+.text__title-block {
+   padding: 65px 75px 65px 0px;
+   border: 1px solid #ffffff;
+   display: flex;
+   align-items: center;
+}
+
+.text__title-block img {
+   margin: 0px 0px 0px 75px;
+}
+
+.text__title::before {
+   content: "Случайный проект: ";
+}
+
+//=================================SLIDER=============================================================
+
+.slider__container {
+   display: flex;
+   padding: 0;
+   border-left: 1px solid #ffffff;
+   border-right: 1px solid #ffffff;
+   overflow: hidden;
+}
+
+.slider__text {
+   display: flex;
+   flex: 1 1 33.333%;
+   padding: 92px 75px;
+   font-family: "DrukWideCyWebBold";
+   font-size: 20px;
+   line-height: 140%;
+   color: #f3f3f3;
+   border-right: 0px;
+}
+
+.main__slider {
+   display: flex;
+   flex: 1 1 60.666%;
+   overflow: hidden;
+}
+
+.main__slider img {
+   object-fit: cover;
+}
+
+.slider__item {
+}
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+   overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+   display: flex;
+   align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+//=================================FOOTER=============================================================
+
+.ticker {
+   border: 1px solid #ffffff;
+   width: 1570px;
+   display: flex;
+   margin: 5px auto;
+   font-family: "DrukWideCyWebBold";
+   font-size: 64px;
+   line-height: 78px;
+   text-transform: uppercase;
+   color: #f3f3f3;
+   padding: 45px 15px;
+   background-color: #ee4941;
+}
+
+.footer {
+   width: 100%;
+   position: relative;
+   &__block {
+      display: flex;
+      margin: -5px 0px 0px 0px;
+   }
+
+   &__column {
+      padding: 85px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: center;
+   }
+
+   .footer__column::before {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+      position: absolute;
+      left: 114px;
+      top: 0px;
+   }
+
+   &__container {
+      padding: 0;
+      border-right: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
+   }
+}
+.column {
+   &__right {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+   }
+
+   &__rate {
+      display: flex;
+      position: relative;
+      align-items: center;
+      padding: 0px 25px 58px 164px;
+   }
+
+   &__rate::after {
+      content: "ТАРИФЫ";
+      font-family: "DrukWideCyWebBold";
+      font-size: 36px;
+      line-height: 44px;
+      color: #f3f3f3;
+      transform: rotate(-90deg);
+      height: 120px;
+      position: absolute;
+      left: -30px;
+      top: 65px;
+   }
+
+   &__rate::before {
+      content: url("../img/icons/injection_t_r.svg");
+      position: absolute;
+      left: 69px;
+      top: -11px;
+   }
+
+   &__title {
+      display: none;
+   }
+
+   &__subtitle {
+      font-family: "DrukWideCyWebBold";
+      font-size: 20px;
+      line-height: 140%;
+      color: #f3f3f3;
+      padding: 0px 0px 29px 0px;
+   }
+
+   &__text {
+      padding: 0px 0px 58px 0px;
+      display: flex;
+   }
+}
+
+.subtitle__column {
+   flex: 0 1 319px;
+   font-size: 20px;
+}
+
+.footer__column-1 {
+   padding: 51px 30px 0px 30px;
+}
+
+.footer__column-row {
+   background-color: #f3f3f3;
+   padding: 33px 52px 38px;
+   position: relative;
+}
+
+.footer__column-row::before {
+   content: url("../img/icons/injection_h_b_r.svg");
+   position: absolute;
+   right: 15px;
+   bottom: 15px;
+}
+
+.footer__column-row::after {
+   content: url("../img/icons/injection_h_t_l.svg");
+   position: absolute;
+   top: 15px;
+   left: 15px;
+}
+
+.subtitle__column-1 {
+   color: #1c1c1c;
+}
+
+.column__text-1 {
+   color: #1c1c1c;
+   padding: 0px 0px 19px 0px;
+}
+
+.button {
+   background: #1c1c1c;
+   text-align: center;
+}
+
+.btn {
+   font-family: "DrukWideCyWebBold";
+   font-size: 14px;
+   line-height: 17px;
+   width: 100%;
+   display: inline-block;
+   color: #f3f3f3;
+   padding: 15px 30px;
+}
+
+//=================================АДАПТАЦИЯ=============================================================
+
+@media screen and (max-width: 1570px) {
+   .container {
+      max-width: 1200px;
+   }
+
+   .block__column-3 {
+      background: url(../img/icons/injection_t_r.svg) 42% 33% no-repeat;
+   }
+
+   .block__column-2 {
+      background: url(../img/icons/injection_t_l.svg) 6% 34% no-repeat;
+   }
+
+   .block__column-1 {
+      background: url(../img/icons/injection_b_r.svg) 33% 49% no-repeat;
+   }
+
+   .column__block {
+      padding: 50px 30px;
+   }
+
+   .header__title {
+      font-size: 42px;
+      line-height: 51px;
+      padding: 0px 35px 0px 25px;
+   }
+
+   .title__block {
+      font-size: 28px;
+      line-height: 34px;
+      padding: 0px 0px 10px 0px;
+   }
+
+   .text__block {
+      font-size: 14px;
+      line-height: 19px;
+   }
+
+   .benefits__title {
+      width: 273px;
+      font-size: 15px;
+      line-height: 19px;
+      padding: 0px 0px 16px 0px;
+   }
+
+   .text__title-block img {
+      margin: 0px 0px 0px 30px;
+   }
+
+   .text__title {
+      font-family: "DrukWideCyWebBold";
+      font-size: 28px;
+      line-height: 34px;
+      color: #f3f3f3;
+      padding: 0px 0px 0px 58px;
+   }
+
+   .text__title-block {
+      padding: 19px 30px 38px 0px;
+      border: 1 px solid #ffffff;
+      display: flex;
+      align-items: center;
+   }
+
+   .slider__text {
+      display: flex;
+      padding: 64px 30px;
+      font-size: 16px;
+      line-height: 140%;
+   }
+
+   .ticker {
+      width: 1200px;
+      font-size: 50px;
+      line-height: 61px;
+      padding: 34px 0px;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   .main__slider {
+      height: 336px;
+      width: 1014px;
+   }
+
+   .slider__container {
+      overflow: hidden;
+      justify-content: space-between;
+   }
+
+   .slick-slide {
+      width: 100%;
+   }
+
+   .column__rate::after {
+      font-size: 28px;
+      line-height: 34px;
+      height: 120px;
+      left: 0px;
+      top: 30px;
+   }
+
+   .column__rate::before {
+      left: 60px;
+      top: -17px;
+   }
+
+   .column__subtitle {
+      font-size: 16px;
+      line-height: 140%;
+      padding: 0px 0px 20px 0px;
+   }
+
+   .column__right {
+      display: block;
+   }
+
+   .footer .footer__column {
+      padding: 79px 0px 0px 0px;
+   }
+
+   .footer .footer__column::before {
+      height: 100%;
+      top: 0px;
+      left: 95px;
+   }
+
+   .column__rate {
+      padding: 0px 0px 0px 118px;
+   }
+
+   .column__text {
+      padding: 0;
+      display: flex;
+      flex: 1 0 auto;
+   }
+}
+
+//=================================576PX END >=============================================================
+
+@media screen and (max-width: 576px) {
+   .container {
+      max-width: 100%;
+      padding: 0px 20px;
+      border: none;
+   }
+
+   .header {
+      padding: 36px 20px 0px 20px;
+   }
+
+   .header__container {
+      margin: 0px 0px 50px 0px;
+      padding: 0px 0px 26px 0px;
+      border-bottom: 1px solid #fff;
+   }
+
+   .header__logo img {
+      width: 45px;
+      height: 50px;
+   }
+
+   .header__logo {
+      margin: 0px;
+   }
+
+   .header__title {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0px 0px 0px 17px;
+   }
+
+   .title__block {
+      font-size: 28px;
+      line-height: 34px;
+   }
+
+   .block__column-2 .title__block:nth-child(1) {
+      padding: 0px 0px 0px 9px;
+   }
+
+   .benefits__title {
+      font-size: 16px;
+      line-height: 19px;
+   }
+
+   .text__title-block img {
+      width: 100%;
+      height: 64px;
+   }
+
+   .main__slider {
+      width: 100%;
+   }
+
+   .ticker {
+      width: 100%;
+      font-size: 25px;
+      line-height: 31px;
+      transform: rotate(-2.44deg);
+      margin: 16px 0px 32px;
+   }
+
+   .footer .footer__column::before {
+      display: none;
+   }
+
+   .block__info {
+      flex-wrap: wrap;
+   }
+
+   .text__title-block {
+      flex-wrap: wrap;
+   }
+
+   .slider__container {
+      flex-wrap: wrap;
+   }
+
+   .footer__block {
+      flex-wrap: wrap;
+   }
+
+   .block__column-3 {
+      background: url(../img/icons/injection_t_r.svg) 145px 15px no-repeat;
+   }
+
+   .block__column-2 {
+      background: url(../img/icons/injection_t_l.svg) 15px 15px no-repeat;
+   }
+
+   .block__column-1 {
+      background: url(../img/icons/injection_b_r.svg) 112px 38px no-repeat;
+   }
+
+   .column__block {
+      flex: 1 1 100%;
+      margin: 0px 0px 20px 0px;
+      padding: 15px 15px;
+   }
+
+   .column__block:last-child {
+      margin: 0px 0px 50px 0px;
+   }
+
+   .text__title-block {
+      border: none;
+      padding: 0px;
+   }
+
+   .benefits__block-column {
+      border: none;
+      border-left: 1px solid #929292;
+   }
+
+   .slider__text {
+      background-color: #f3f3f3;
+      color: #1c1c1c;
+      position: relative;
+      padding: 32px 20px;
+      margin: 0;
+      order: 2;
+   }
+
+   .slider__text::before {
+      content: url("../img/icons/injection_h_b_r.svg");
+      position: absolute;
+      right: 7px;
+      bottom: 7px;
+   }
+
+   .slider__text::after {
+      content: url("../img/icons/injection_h_t_l.svg");
+      position: absolute;
+      top: 7px;
+      left: 7px;
+   }
+
+   .text__title-block img {
+      margin: 0px 0px 58px 0px;
+   }
+
+   .text__title {
+      padding: 0px 0px 50px 0px;
+   }
+
+   .column__rate::after {
+      display: none;
+   }
+
+   .column__rate::before {
+      left: 165px;
+      top: 0px;
+   }
+
+   .column__title {
+      display: block;
+      font-family: "DrukWideCyWebBold";
+      font-size: 28px;
+      line-height: 34px;
+      color: #f3f3f3;
+      padding: 0px 0px 35px 0px;
+   }
+
+   .footer__block .column__block:first-child {
+      order: 2;
+      padding: 50px 0px 0px 0px;
+   }
+
+   .footer__column {
+      border: none;
+   }
+
+   .footer__column-1 {
+      margin: 0px;
+      border: none;
+      padding: 0px 0px 55px 0px;
+      order: 3;
+   }
+
+   .column__rate {
+      padding: 0;
+   }
+
+   .subtitle__column {
+      background-color: #f3f3f3;
+      color: #1c1c1c;
+      position: relative;
+      padding: 32px 20px;
+      flex: 0 1 auto;
+      order: 2;
+      width: 100%;
+      justify-content: center;
+   }
+
+   .subtitle__column::before {
+      content: url("../img/icons/injection_h_b_r.svg");
+      position: absolute;
+      right: 7px;
+      bottom: 7px;
+   }
+
+   .subtitle__column::after {
+      content: url("../img/icons/injection_h_t_l.svg");
+      position: absolute;
+      top: 7px;
+      left: 7px;
+   }
+
+   .footer__column-row {
+      background-color: #f3f3f3;
+      padding: 33px 28px;
+      position: relative;
+   }
+
+   .btn {
+      padding: 15px 20px;
+   }
+
+   .footer .footer__column {
+      padding: 0;
+   }
+
+   .main__slider img {
+      width: 24%;
+   }
+}
+
+//=================================ПОДКЛЮЧЕНИЕ ШРИФТА=============================================================
+@font-face {
+   font-family: "DrukWideCyWebBold";
+   src: url("../fonts/DrukWideCyWebBoldRegular.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+}
