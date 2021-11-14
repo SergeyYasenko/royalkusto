@@ -304,17 +304,23 @@ body {
 //=================================FOOTER=============================================================
 
 .ticker {
-   border: 1px solid #ffffff;
    width: 1570px;
-   display: flex;
-   margin: 5px auto;
+   margin: 0 auto;
    font-family: "DrukWideCyWebBold";
    font-size: 64px;
    line-height: 78px;
    text-transform: uppercase;
    color: #f3f3f3;
    padding: 45px 15px;
+}
+
+.marquee-wrapper {
    background-color: #ee4941;
+   border: 1px solid #ffffff;
+   display: flex;
+   width: 1570px;
+   margin: 0 auto;
+   overflow: hidden;
 }
 
 .footer {
@@ -594,6 +600,10 @@ body {
       display: flex;
       flex: 1 0 auto;
    }
+
+   .marquee-wrapper {
+      width: 1200px;
+   }
 }
 
 //=================================576PX END >=============================================================
@@ -660,6 +670,11 @@ body {
       line-height: 31px;
       transform: rotate(-2.44deg);
       margin: 16px 0px 32px;
+   }
+
+   .marquee-wrapper {
+      width: 100%;
+      transform: rotate(-2.44deg);
    }
 
    .footer .footer__column::before {
