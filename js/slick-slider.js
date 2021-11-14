@@ -6,14 +6,14 @@ $(document).ready(function () {
       arrows: false,
       adaptiveHeight: false,
       speed: 2000,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       waitForAnimate: false,
       // touchThreshold: 12,
       pauseOnFocus: false,
       pauseOnHover: false,
       pauseOnDotsHover: false,
-      swipe: false,
+      swipe: true,
       variableWidth: true,
    });
 });
