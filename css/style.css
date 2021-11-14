@@ -289,14 +289,16 @@ body {
 /* Активная точка */
 /* Элемент точки */
 .ticker {
-  width: 1570px;
-  margin: 0 auto;
+  width: 300%;
   font-family: "DrukWideCyWebBold";
   font-size: 64px;
   line-height: 78px;
   text-transform: uppercase;
   color: #f3f3f3;
-  padding: 45px 15px;
+  padding: 45px 150px 45px;
+  white-space: nowrap;
+  -webkit-animation: marquee-infinite 10s linear infinite;
+          animation: marquee-infinite 10s linear infinite;
 }
 
 .marquee-wrapper {
@@ -308,13 +310,29 @@ body {
   overflow: hidden;
 }
 
+@-webkit-keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .footer {
   width: 100%;
   position: relative;
 }
 .footer__block {
   display: flex;
-  margin: -5px 0px 0px 0px;
 }
 .footer__column {
   padding: 85px 0px 0px 0px;
@@ -507,10 +525,10 @@ body {
   }
 
   .ticker {
-    width: 1200px;
+    width: 300%;
     font-size: 50px;
     line-height: 61px;
-    padding: 34px 0px;
+    padding: 34px 100px;
   }
 
   .container {
@@ -634,16 +652,18 @@ body {
   }
 
   .ticker {
-    border: none;
     width: 100%;
     font-size: 25px;
     line-height: 31px;
-    transform: rotate(-2.44deg);
-    margin: 16px 0px 32px;
+    padding: 16px 50px 16px;
   }
 
   .marquee-wrapper {
-    width: 100%;
+    width: 400%;
+    background: url(../img/main/marquee.svg) center no-repeat;
+    background-size: 100%;
+    border: none;
+    margin: 30px 0px 70px;
     transform: rotate(-2.44deg);
   }
 
