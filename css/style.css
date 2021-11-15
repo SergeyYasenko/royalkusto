@@ -640,6 +640,8 @@ body {
   .benefits__title {
     font-size: 16px;
     line-height: 19px;
+    max-width: 242px;
+    flex: 1 1 auto;
   }
 
   .text__title-block img {
@@ -663,7 +665,7 @@ body {
     background: url(../img/main/marquee.svg) center no-repeat;
     background-size: 100%;
     border: none;
-    margin: 30px auto 70px;
+    margin: 30px auto 30px;
     transform: rotate(-2.44deg);
   }
 
@@ -707,6 +709,10 @@ body {
 
   .column__block:last-child {
     margin: 0px 0px 50px 0px;
+  }
+
+  .column__block br {
+    display: none;
   }
 
   .text__title-block {
