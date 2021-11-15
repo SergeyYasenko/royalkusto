@@ -662,10 +662,9 @@ body {
 
   .marquee-wrapper {
     width: 100%;
-    background: url(../img/main/marquee.svg) center no-repeat;
     background-size: 100%;
     border: none;
-    margin: 30px auto 30px;
+    margin: 50px auto 50px;
     transform: rotate(-2.44deg);
   }
 
