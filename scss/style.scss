@@ -618,10 +618,16 @@ body {
 //=================================576PX END >=============================================================
 
 @media screen and (max-width: 576px) {
+   html,
+   body {
+      overflow-x: hidden;
+   }
+
    .container {
       max-width: 100%;
       padding: 0px 20px;
       border: none;
+      overflow-x: hidden;
    }
 
    .header {
@@ -669,7 +675,7 @@ body {
    }
 
    .main__slider {
-      width: 100%;
+      flex: 1 1 100%;
    }
 
    .ticker {
@@ -684,7 +690,7 @@ body {
       background: url(../img/main/marquee.svg) center no-repeat;
       background-size: 100%;
       border: none;
-      margin: 30px 0px 70px;
+      margin: 30px auto 70px;
       transform: rotate(-2.44deg);
    }
 
