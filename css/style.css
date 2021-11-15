@@ -178,29 +178,8 @@ body {
   flex: 1 1 33.333%;
 }
 .benefits__block-column {
-  transition: all 0.3s ease;
-}
-.benefits__block-column:hover {
-  background-color: #fff;
   position: relative;
-}
-.benefits__block-column:hover .benefits__title {
-  color: #131313;
-}
-.benefits__block-column:hover .benefits__text {
-  color: #131313;
-}
-.benefits__block-column:hover::before {
-  content: url("../img/icons/injection_h_b_r.svg");
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-}
-.benefits__block-column:hover::after {
-  content: url("../img/icons/injection_h_t_l.svg");
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  transition: all 0.3s ease;
 }
 .benefits__title {
   font-family: "DrukWideCyWebBold";
@@ -594,6 +573,27 @@ body {
 
   .marquee-wrapper {
     width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__block-column:hover {
+    background-color: #fff;
+  }
+  .benefits__block-column:hover .benefits__title, .benefits__block-column:hover .benefits__text {
+    color: #131313;
+  }
+  .benefits__block-column:hover::before, .benefits__block-column:hover::after {
+    content: url("../img/icons/injection_h_b_r.svg");
+    position: absolute;
+  }
+  .benefits__block-column:hover::before {
+    content: url("../img/icons/injection_h_t_l.svg");
+    top: 15px;
+    left: 15px;
+  }
+  .benefits__block-column:hover::after {
+    bottom: 15px;
+    right: 15px;
   }
 }
 @media screen and (max-width: 576px) {

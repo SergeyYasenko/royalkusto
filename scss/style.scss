@@ -137,34 +137,8 @@ body {
    }
 
    &__block-column {
-      transition: all 0.3s ease;
-   }
-
-   &__block-column:hover {
-      background-color: #fff;
       position: relative;
-   }
-
-   &__block-column:hover .benefits__title {
-      color: #131313;
-   }
-
-   &__block-column:hover .benefits__text {
-      color: #131313;
-   }
-
-   &__block-column:hover::before {
-      content: url("../img/icons/injection_h_b_r.svg");
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
-   }
-
-   &__block-column:hover::after {
-      content: url("../img/icons/injection_h_t_l.svg");
-      position: absolute;
-      top: 15px;
-      left: 15px;
+      transition: all 0.3s ease;
    }
 
    &__title {
@@ -612,6 +586,36 @@ body {
 
    .marquee-wrapper {
       width: 1200px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .benefits {
+      &__block-column:hover {
+         background-color: #fff;
+      }
+
+      &__block-column:hover .benefits__title,
+      &__block-column:hover .benefits__text {
+         color: #131313;
+      }
+
+      &__block-column:hover::before,
+      &__block-column:hover::after {
+         content: url("../img/icons/injection_h_b_r.svg");
+         position: absolute;
+      }
+
+      &__block-column:hover::before {
+         content: url("../img/icons/injection_h_t_l.svg");
+         top: 15px;
+         left: 15px;
+      }
+
+      &__block-column:hover::after {
+         bottom: 15px;
+         right: 15px;
+      }
    }
 }
 
