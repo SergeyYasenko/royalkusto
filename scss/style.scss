@@ -278,7 +278,7 @@ body {
 //=================================FOOTER=============================================================
 
 .ticker {
-   width: 400%;
+   width: 1500%;
    font-family: "DrukWideCyWebBold";
    font-size: 64px;
    line-height: 78px;
@@ -296,15 +296,6 @@ body {
    width: 1570px;
    margin: 0 auto;
    overflow: hidden;
-}
-
-@keyframes marquee-infinite {
-   0% {
-      transform: translateX(0%);
-   }
-   100% {
-      transform: translateX(-100%);
-   }
 }
 
 .footer {
@@ -684,10 +675,9 @@ body {
    }
 
    .ticker {
-      width: 900%;
       font-size: 25px;
       line-height: 31px;
-      padding: 16px 70px 16px;
+      padding: 16px 0px 16px;
    }
 
    .marquee-wrapper {
