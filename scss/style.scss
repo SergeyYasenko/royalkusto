@@ -633,7 +633,10 @@ body {
    .block__column-2:hover,
    .block__column-3:hover {
       background-color: #fff;
-      padding: 77px 100px 0px 120px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 
    .block__column-1:hover .block__title-1,
@@ -642,8 +645,8 @@ body {
       display: none;
    }
 
-   .block__column-1:hover.block__text,
-   .block__column-2:hover.block__text,
+   .block__column-1:hover .block__text,
+   .block__column-2:hover .block__text-2,
    .block__column-3:hover .block__text {
       display: none;
    }
@@ -657,6 +660,7 @@ body {
       text-align: center;
       display: block;
       color: #131313;
+      flex: 1 1 100%;
    }
 
    .block__column-1:hover::before,
