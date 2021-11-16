@@ -78,30 +78,11 @@ body {
    }
 }
 
-.block {
-   &__row {
-   }
-
-   &__info {
-      display: flex;
-   }
-
-   &__column-1 {
-      background: url("../img/icons/injection_b_r.svg") 36% 52% no-repeat;
-   }
-
-   &__column-2 {
-      background: url("../img/icons/injection_t_l.svg") 8% 32% no-repeat;
-   }
-
-   &__column-3 {
-      background: url("../img/icons/injection_t_r.svg") 45% 32% no-repeat;
-   }
-
-   &__title {
-   }
-
-   &__text {
+.column {
+   &__block {
+      flex: 1 1 33.333%;
+      border: 1px solid #ffffff;
+      padding: 67px 75px 67px 50px;
    }
 }
 
@@ -114,13 +95,54 @@ body {
       color: #f3f3f3;
       padding: 0px 0px 13px 0px;
    }
+
+   &__block-h {
+      display: none;
+   }
 }
 
-.column {
-   &__block {
-      flex: 1 1 33.333%;
-      border: 1px solid #ffffff;
-      padding: 67px 75px 67px 50px;
+.block {
+   &__row {
+   }
+
+   &__info {
+      display: flex;
+   }
+
+   &__column-1 {
+      transition: all 0.3s ease;
+      position: relative;
+   }
+
+   &__column-2 {
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 67px 75px 67px 45px;
+   }
+
+   &__column-3 {
+      transition: all 0.3s ease;
+      position: relative;
+   }
+
+   &__title-1 {
+      background: url("../img/icons/injection_b_r.svg") 125px 30px no-repeat;
+   }
+
+   &__title-2 {
+      padding: 0px 0px 13px 10px;
+      background: url("../img/icons/injection_t_l.svg") 2px 0px no-repeat;
+   }
+
+   &__title-3 {
+      background: url("../img/icons/injection_t_r.svg") 166px 0px no-repeat;
+   }
+
+   &__title {
+   }
+
+   &__text-2 {
+      padding: 0px 0px 0px 10px;
    }
 }
 
@@ -137,8 +159,6 @@ body {
    }
 
    &__block-column {
-      position: relative;
-      transition: all 0.3s ease;
    }
 
    &__title {
@@ -209,7 +229,12 @@ body {
 }
 
 .main__slider img {
-   object-fit: cover;
+   filter: grayscale(1);
+   transition: all 0.6s ease;
+}
+
+.main__slider:hover img {
+   filter: grayscale(0);
 }
 
 .slider__item {
@@ -278,7 +303,6 @@ body {
 //=================================FOOTER=============================================================
 
 .ticker {
-   width: 1500%;
    font-family: "DrukWideCyWebBold";
    font-size: 64px;
    line-height: 78px;
@@ -286,16 +310,26 @@ body {
    color: #f3f3f3;
    padding: 45px 150px 45px;
    white-space: nowrap;
-   animation: marquee-infinite 17s linear infinite;
+   padding-left: 100%;
+   animation: scroll 30s infinite linear;
 }
 
 .marquee-wrapper {
-   background-color: #ee4941;
+   background-color: #e22020;
    border: 1px solid #ffffff;
    display: flex;
    width: 1570px;
    margin: 0 auto;
    overflow: hidden;
+}
+
+@keyframes scroll {
+   0% {
+      transform: translate(0%, 0);
+   }
+   100% {
+      transform: translate(-100%, 0);
+   }
 }
 
 .footer {
@@ -441,16 +475,16 @@ body {
       max-width: 1200px;
    }
 
-   .block__column-3 {
-      background: url(../img/icons/injection_t_r.svg) 42% 33% no-repeat;
+   .block__title-3 {
+      background: url(../img/icons/injection_t_r.svg) 127px 0px no-repeat;
    }
 
-   .block__column-2 {
-      background: url(../img/icons/injection_t_l.svg) 6% 34% no-repeat;
+   .block__title-2 {
+      background: url(../img/icons/injection_t_l.svg) 4px 0px no-repeat;
    }
 
-   .block__column-1 {
-      background: url(../img/icons/injection_b_r.svg) 33% 49% no-repeat;
+   .block__title-1 {
+      background: url(../img/icons/injection_b_r.svg) 94px 21px no-repeat;
    }
 
    .column__block {
@@ -467,6 +501,10 @@ body {
       font-size: 28px;
       line-height: 34px;
       padding: 0px 0px 10px 0px;
+   }
+
+   .block__title-2 {
+      padding: 0px 0px 10px 10px;
    }
 
    .text__block {
@@ -508,10 +546,18 @@ body {
    }
 
    .ticker {
-      width: 300%;
       font-size: 50px;
       line-height: 61px;
       padding: 34px 100px;
+   }
+
+   @keyframes scroll {
+      0% {
+         transform: translate(40%, 0);
+      }
+      100% {
+         transform: translate(-100%, 0);
+      }
    }
 
    .container {
@@ -580,33 +626,62 @@ body {
    }
 }
 
+//=================================576PX END >=============================================================
+
 @media screen and (min-width: 1200px) {
-   .benefits {
-      &__block-column:hover {
-         background-color: #fff;
-      }
+   .block__column-1:hover,
+   .block__column-2:hover,
+   .block__column-3:hover {
+      background-color: #fff;
+      padding: 77px 100px 0px 120px;
+   }
 
-      &__block-column:hover .benefits__title,
-      &__block-column:hover .benefits__text {
-         color: #131313;
-      }
+   .block__column-1:hover .block__title-1,
+   .block__column-2:hover .block__title-2,
+   .block__column-3:hover .block__title-3 {
+      display: none;
+   }
 
-      &__block-column:hover::before,
-      &__block-column:hover::after {
-         content: url("../img/icons/injection_h_b_r.svg");
-         position: absolute;
-      }
+   .block__column-1:hover.block__text,
+   .block__column-2:hover.block__text,
+   .block__column-3:hover .block__text {
+      display: none;
+   }
 
-      &__block-column:hover::before {
-         content: url("../img/icons/injection_h_t_l.svg");
-         top: 15px;
-         left: 15px;
-      }
+   .block__column-1:hover .title__block-h,
+   .block__column-2:hover .title__block-h,
+   .block__column-3:hover .title__block-h {
+      font-family: "DrukWideCyWebBold";
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      display: block;
+      color: #131313;
+   }
 
-      &__block-column:hover::after {
-         bottom: 15px;
-         right: 15px;
-      }
+   .block__column-1:hover::before,
+   .block__column-2:hover::before,
+   .block__column-3:hover::before,
+   .block__column-1:hover::after,
+   .block__column-2:hover::after,
+   .block__column-3:hover::after {
+      content: url("../img/icons/injection_h_b_r.svg");
+      position: absolute;
+   }
+
+   .block__column-1:hover::before,
+   .block__column-2:hover::before,
+   .block__column-3:hover::before {
+      content: url("../img/icons/injection_h_t_l.svg");
+      top: 15px;
+      left: 15px;
+   }
+
+   .block__column-1:hover::after,
+   .block__column-2:hover::after,
+   .block__column-3:hover::after {
+      bottom: 15px;
+      right: 15px;
    }
 }
 
@@ -689,6 +764,15 @@ body {
       transform: rotate(-2.44deg);
    }
 
+   @keyframes scroll {
+      0% {
+         transform: translate(40%, 0);
+      }
+      100% {
+         transform: translate(-100%, 0);
+      }
+   }
+
    .footer .footer__column::before {
       display: none;
    }
@@ -709,16 +793,16 @@ body {
       flex-wrap: wrap;
    }
 
-   .block__column-3 {
-      background: url(../img/icons/injection_t_r.svg) 145px 15px no-repeat;
+   .block__title-3 {
+      background: url(../img/icons/injection_t_r.svg) 128px 0px no-repeat;
    }
 
-   .block__column-2 {
-      background: url(../img/icons/injection_t_l.svg) 15px 15px no-repeat;
+   .block__title-2 {
+      background: url(../img/icons/injection_t_l.svg) 2px 0px no-repeat;
    }
 
-   .block__column-1 {
-      background: url(../img/icons/injection_b_r.svg) 112px 38px no-repeat;
+   .block__title-1 {
+      background: url(../img/icons/injection_b_r.svg) 94px 21px no-repeat;
    }
 
    .column__block {
@@ -856,6 +940,10 @@ body {
 
    .main__slider img {
       width: 24%;
+   }
+
+   .main__slider img {
+      filter: grayscale(0);
    }
 }
 
