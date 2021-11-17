@@ -178,11 +178,11 @@ body {
   position: relative;
 }
 .block__title-1 {
-  background: url("../img/icons/injection_b_r.svg") 125px 30px no-repeat;
+  background: url("../img/icons/injection_b_r.svg") 130px 35px no-repeat;
 }
 .block__title-2 {
   padding: 0px 0px 13px 10px;
-  background: url("../img/icons/injection_t_l.svg") 2px 0px no-repeat;
+  background: url("../img/icons/injection_t_l.svg") 0px 0px no-repeat;
 }
 .block__title-3 {
   background: url("../img/icons/injection_t_r.svg") 166px 0px no-repeat;
@@ -519,11 +519,11 @@ body {
   }
 
   .block__title-2 {
-    background: url(../img/icons/injection_t_l.svg) 4px 0px no-repeat;
+    background: url(../img/icons/injection_t_l.svg) 2px 0px no-repeat;
   }
 
   .block__title-1 {
-    background: url(../img/icons/injection_b_r.svg) 94px 21px no-repeat;
+    background: url(../img/icons/injection_b_r.svg) 100px 25px no-repeat;
   }
 
   .column__block {
@@ -770,7 +770,11 @@ body {
   }
 
   .block__column-2 .title__block:nth-child(1) {
-    padding: 0px 0px 10px 9px;
+    padding: 10px 0px 12px 9px;
+  }
+
+  .block__column-3 .title__block:nth-child(1) {
+    padding: 10px 0px 12px 0px;
   }
 
   .benefits__title {
@@ -840,16 +844,21 @@ body {
     flex-wrap: wrap;
   }
 
+  .text__title-block {
+    border: none;
+    padding: 0px;
+  }
+
   .block__title-3 {
-    background: url(../img/icons/injection_t_r.svg) 128px 0px no-repeat;
+    background: url(../img/icons/injection_t_r.svg) 140px 3px no-repeat;
   }
 
   .block__title-2 {
-    background: url(../img/icons/injection_t_l.svg) 3px 0px no-repeat;
+    background: url(../img/icons/injection_t_l.svg) 0px 5px no-repeat;
   }
 
   .block__title-1 {
-    background: url(../img/icons/injection_b_r.svg) 95px 22px no-repeat;
+    background: url(../img/icons/injection_b_r.svg) 100px 27px no-repeat;
   }
 
   .column__block {
@@ -864,11 +873,6 @@ body {
 
   .column__block br {
     display: none;
-  }
-
-  .text__title-block {
-    border: none;
-    padding: 0px;
   }
 
   .benefits__block-column {
@@ -912,8 +916,9 @@ body {
   }
 
   .column__rate::before {
+    content: url("../img/icons/injection_b_r.svg");
     left: 165px;
-    top: 0px;
+    top: 25px;
   }
 
   .column__title {

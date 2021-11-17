@@ -126,12 +126,12 @@ body {
    }
 
    &__title-1 {
-      background: url("../img/icons/injection_b_r.svg") 125px 30px no-repeat;
+      background: url("../img/icons/injection_b_r.svg") 130px 35px no-repeat;
    }
 
    &__title-2 {
       padding: 0px 0px 13px 10px;
-      background: url("../img/icons/injection_t_l.svg") 2px 0px no-repeat;
+      background: url("../img/icons/injection_t_l.svg") 0px 0px no-repeat;
    }
 
    &__title-3 {
@@ -562,11 +562,11 @@ body {
    }
 
    .block__title-2 {
-      background: url(../img/icons/injection_t_l.svg) 4px 0px no-repeat;
+      background: url(../img/icons/injection_t_l.svg) 2px 0px no-repeat;
    }
 
    .block__title-1 {
-      background: url(../img/icons/injection_b_r.svg) 94px 21px no-repeat;
+      background: url(../img/icons/injection_b_r.svg) 100px 25px no-repeat;
    }
 
    .column__block {
@@ -816,7 +816,11 @@ body {
    }
 
    .block__column-2 .title__block:nth-child(1) {
-      padding: 0px 0px 10px 9px;
+      padding: 10px 0px 12px 9px;
+   }
+
+   .block__column-3 .title__block:nth-child(1) {
+      padding: 10px 0px 12px 0px;
    }
 
    .benefits__title {
@@ -878,17 +882,21 @@ body {
    .footer__block {
       flex-wrap: wrap;
    }
+   .text__title-block {
+      border: none;
+      padding: 0px;
+   }
 
    .block__title-3 {
-      background: url(../img/icons/injection_t_r.svg) 128px 0px no-repeat;
+      background: url(../img/icons/injection_t_r.svg) 140px 3px no-repeat;
    }
 
    .block__title-2 {
-      background: url(../img/icons/injection_t_l.svg) 3px 0px no-repeat;
+      background: url(../img/icons/injection_t_l.svg) 0px 5px no-repeat;
    }
 
    .block__title-1 {
-      background: url(../img/icons/injection_b_r.svg) 95px 22px no-repeat;
+      background: url(../img/icons/injection_b_r.svg) 100px 27px no-repeat;
    }
 
    .column__block {
@@ -903,11 +911,6 @@ body {
 
    .column__block br {
       display: none;
-   }
-
-   .text__title-block {
-      border: none;
-      padding: 0px;
    }
 
    .benefits__block-column {
@@ -951,8 +954,9 @@ body {
    }
 
    .column__rate::before {
+      content: url("../img/icons/injection_b_r.svg");
       left: 165px;
-      top: 0px;
+      top: 25px;
    }
 
    .column__title {
@@ -1032,43 +1036,39 @@ body {
       filter: grayscale(0);
    }
 
-
-
-
    .contact {
       &__container {
          flex-wrap: wrap;
       }
-   
+
       &__column {
          flex: 1 1 100%;
          border: none;
       }
-   
+
       &__logo {
          width: 113px;
          height: 103px;
       }
-   
+
       &__title {
          font-size: 28px;
          line-height: 34px;
          padding: 5px 0px 13px 10px;
       }
-   
+
       &__list {
          display: flex;
          flex-direction: column;
          align-items: center;
       }
-   
+
       &__icon {
          width: 45px;
          height: 45px;
       }
    }
 }
-
 
 //=================================ПОДКЛЮЧЕНИЕ ШРИФТА=============================================================
 @font-face {
