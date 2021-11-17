@@ -992,61 +992,33 @@ body {
   .main__slider img {
     filter: grayscale(0);
   }
-}
-.contact__container {
-  flex-wrap: wrap;
-}
-.contact__column {
-  flex: 1 1 100%;
-  border: none;
-}
-.contact__column:nth-child(3) {
-  flex-direction: row;
-}
-.contact__logo {
-  width: 113px;
-  height: 103px;
-  padding: 0px 0px 10px 0px;
-}
-.contact__copy {
-  letter-spacing: -0.01em;
-  color: #c5c5c5;
-}
-.contact__copy:hover {
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
-}
-.contact__title {
-  font-family: "DrukWideCyWebBold";
-  font-size: 28px;
-  line-height: 34px;
-  padding: 0px 0px 13px 10px;
-  background: url("../img/icons/injection_t_l.svg") top left no-repeat;
-}
-.contact__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact__item {
-  letter-spacing: -0.01em;
-  display: inline-block;
-  color: #c5c5c5;
-  padding: 0px 0px 13px 0px;
-}
-.contact__item:hover {
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
-}
-.contact__icon {
-  width: 45px;
-  height: 45px;
-  margin: 0px 21px 0px 0px;
-}
-.contact__icon :last-child {
-  margin: 0;
-}
 
+  .contact__container {
+    flex-wrap: wrap;
+  }
+  .contact__column {
+    flex: 1 1 100%;
+    border: none;
+  }
+  .contact__logo {
+    width: 113px;
+    height: 103px;
+  }
+  .contact__title {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 5px 0px 13px 10px;
+  }
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
 @font-face {
   font-family: "DrukWideCyWebBold";
   src: url("../fonts/DrukWideCyWebBoldRegular.ttf") format("truetype");
