@@ -1004,8 +1004,8 @@ body {
   flex-direction: row;
 }
 .contact__logo {
-  width: 135px;
-  height: 123px;
+  width: 113px;
+  height: 103px;
   padding: 0px 0px 10px 0px;
 }
 .contact__copy {
@@ -1018,8 +1018,8 @@ body {
 }
 .contact__title {
   font-family: "DrukWideCyWebBold";
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 34px;
   padding: 0px 0px 13px 10px;
   background: url("../img/icons/injection_t_l.svg") top left no-repeat;
 }
@@ -1039,6 +1039,8 @@ body {
           text-decoration: revert;
 }
 .contact__icon {
+  width: 45px;
+  height: 45px;
   margin: 0px 21px 0px 0px;
 }
 .contact__icon :last-child {
