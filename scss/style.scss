@@ -468,6 +468,88 @@ body {
    padding: 15px 30px;
 }
 
+.footer {
+   &__contact-block {
+   }
+}
+.contact {
+   &__block {
+   }
+
+   &__container {
+      padding: 0;
+      display: flex;
+   }
+
+   &__column {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 33.333%;
+   }
+
+   &__column:nth-child(3) {
+      flex-direction: row;
+   }
+
+   &__logo {
+      width: 135px;
+      height: 123px;
+      padding: 0px 0px 10px 0px;
+   }
+
+   &__copy {
+      letter-spacing: -0.01em;
+      color: #c5c5c5;
+   }
+
+   &__copy:hover {
+      text-decoration: revert;
+   }
+
+   &__title {
+      font-family: "DrukWideCyWebBold";
+      font-size: 36px;
+      line-height: 44px;
+      padding: 0px 0px 13px 10px;
+      background: url("../img/icons/injection_t_l.svg") top left no-repeat;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__link {
+   }
+
+   &__item {
+      letter-spacing: -0.01em;
+      display: inline-block;
+      color: #c5c5c5;
+      padding: 0px 0px 13px 0px;
+   }
+
+   &__item:hover {
+      text-decoration: revert;
+   }
+
+   &__icon {
+      margin: 0px 21px 0px 0px;
+      :last-child {
+         margin: 0;
+      }
+   }
+}
+.conteiner {
+}
+.column {
+   &__block {
+   }
+}
+
 //=================================АДАПТАЦИЯ=============================================================
 
 @media screen and (max-width: 1570px) {
@@ -948,6 +1030,84 @@ body {
 
    .main__slider img {
       filter: grayscale(0);
+   }
+}
+
+
+
+
+
+.contact {
+   &__block {
+   }
+
+   &__container {
+      flex-wrap: wrap;
+   }
+
+   &__column {
+      flex: 1 1 100%;
+      border: none;
+   }
+
+   &__column:nth-child(3) {
+      flex-direction: row;
+   }
+
+   &__logo {
+      width: 135px;
+      height: 123px;
+      padding: 0px 0px 10px 0px;
+   }
+
+   &__copy {
+      letter-spacing: -0.01em;
+      color: #c5c5c5;
+   }
+
+   &__copy:hover {
+      text-decoration: revert;
+   }
+
+   &__title {
+      font-family: "DrukWideCyWebBold";
+      font-size: 36px;
+      line-height: 44px;
+      padding: 0px 0px 13px 10px;
+      background: url("../img/icons/injection_t_l.svg") top left no-repeat;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__link {
+   }
+
+   &__item {
+      letter-spacing: -0.01em;
+      display: inline-block;
+      color: #c5c5c5;
+      padding: 0px 0px 13px 0px;
+   }
+
+   &__item:hover {
+      text-decoration: revert;
+   }
+
+   &__icon {
+      margin: 0px 21px 0px 0px;
+      :last-child {
+         margin: 0;
+      }
+   }
+}
+.conteiner {
+}
+.column {
+   &__block {
    }
 }
 

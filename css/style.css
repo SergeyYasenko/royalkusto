@@ -453,6 +453,62 @@ body {
   padding: 15px 30px;
 }
 
+.contact__container {
+  padding: 0;
+  display: flex;
+}
+.contact__column {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 33.333%;
+}
+.contact__column:nth-child(3) {
+  flex-direction: row;
+}
+.contact__logo {
+  width: 135px;
+  height: 123px;
+  padding: 0px 0px 10px 0px;
+}
+.contact__copy {
+  letter-spacing: -0.01em;
+  color: #c5c5c5;
+}
+.contact__copy:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.contact__title {
+  font-family: "DrukWideCyWebBold";
+  font-size: 36px;
+  line-height: 44px;
+  padding: 0px 0px 13px 10px;
+  background: url("../img/icons/injection_t_l.svg") top left no-repeat;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__item {
+  letter-spacing: -0.01em;
+  display: inline-block;
+  color: #c5c5c5;
+  padding: 0px 0px 13px 0px;
+}
+.contact__item:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.contact__icon {
+  margin: 0px 21px 0px 0px;
+}
+.contact__icon :last-child {
+  margin: 0;
+}
+
 @media screen and (max-width: 1570px) {
   .container {
     max-width: 1200px;
@@ -937,6 +993,58 @@ body {
     filter: grayscale(0);
   }
 }
+.contact__container {
+  flex-wrap: wrap;
+}
+.contact__column {
+  flex: 1 1 100%;
+  border: none;
+}
+.contact__column:nth-child(3) {
+  flex-direction: row;
+}
+.contact__logo {
+  width: 135px;
+  height: 123px;
+  padding: 0px 0px 10px 0px;
+}
+.contact__copy {
+  letter-spacing: -0.01em;
+  color: #c5c5c5;
+}
+.contact__copy:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.contact__title {
+  font-family: "DrukWideCyWebBold";
+  font-size: 36px;
+  line-height: 44px;
+  padding: 0px 0px 13px 10px;
+  background: url("../img/icons/injection_t_l.svg") top left no-repeat;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__item {
+  letter-spacing: -0.01em;
+  display: inline-block;
+  color: #c5c5c5;
+  padding: 0px 0px 13px 0px;
+}
+.contact__item:hover {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.contact__icon {
+  margin: 0px 21px 0px 0px;
+}
+.contact__icon :last-child {
+  margin: 0;
+}
+
 @font-face {
   font-family: "DrukWideCyWebBold";
   src: url("../fonts/DrukWideCyWebBoldRegular.ttf") format("truetype");
