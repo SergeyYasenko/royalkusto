@@ -112,6 +112,7 @@ body {
    &__column-1 {
       transition: all 0.3s ease;
       position: relative;
+      padding: 67px 75px 67px 45px;
    }
 
    &__column-2 {
@@ -123,6 +124,7 @@ body {
    &__column-3 {
       transition: all 0.3s ease;
       position: relative;
+      padding: 67px 75px 67px 45px;
    }
 
    &__title-1 {
@@ -144,6 +146,12 @@ body {
    &__text-2 {
       padding: 0px 0px 0px 10px;
    }
+}
+
+.block__column-1,
+.block__column-2,
+.block__column-3 {
+   height: 215px;
 }
 
 //=================================2 BLOCK=============================================================
@@ -734,6 +742,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      border: none;
    }
 
    .block__column-1:hover .block__title-1,

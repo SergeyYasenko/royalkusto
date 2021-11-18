@@ -167,6 +167,7 @@ body {
 .block__column-1 {
   transition: all 0.3s ease;
   position: relative;
+  padding: 67px 75px 67px 45px;
 }
 .block__column-2 {
   transition: all 0.3s ease;
@@ -176,6 +177,7 @@ body {
 .block__column-3 {
   transition: all 0.3s ease;
   position: relative;
+  padding: 67px 75px 67px 45px;
 }
 .block__title-1 {
   background: url("../img/icons/injection_b_r.svg") 130px 35px no-repeat;
@@ -189,6 +191,12 @@ body {
 }
 .block__text-2 {
   padding: 0px 0px 0px 10px;
+}
+
+.block__column-1,
+.block__column-2,
+.block__column-3 {
+  height: 215px;
 }
 
 .benefits__block-info {
@@ -695,6 +703,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
   }
 
   .block__column-1:hover .block__title-1,
