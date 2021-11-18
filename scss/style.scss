@@ -82,7 +82,7 @@ body {
    &__block {
       flex: 1 1 33.333%;
       border: 1px solid #ffffff;
-      padding: 67px 75px 67px 50px;
+      padding: 67px 75px 67px 75px;
    }
 }
 
@@ -537,12 +537,27 @@ body {
    }
 
    &__icon {
+      width: 79px;
+      height: 79px;
       margin: 0px 21px 0px 0px;
       :last-child {
          margin: 0;
       }
    }
 }
+
+.inst:hover {
+   background: url("../img/icons/inst_h.svg") center no-repeat;
+}
+
+.face:hover {
+   background: url("../img/icons/face_h.svg") center no-repeat;
+}
+
+.youtube:hover {
+   background: url("../img/icons/youtube_h.svg") center no-repeat;
+}
+
 .conteiner {
 }
 .column {
