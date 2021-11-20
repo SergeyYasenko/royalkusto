@@ -112,19 +112,19 @@ body {
    &__column-1 {
       transition: all 0.3s ease;
       position: relative;
-      padding: 67px 75px 67px 45px;
+      padding: 67px 75px 67px 75px;
    }
 
    &__column-2 {
       transition: all 0.3s ease;
       position: relative;
-      padding: 67px 75px 67px 45px;
+      padding: 67px 75px 67px 75px;
    }
 
    &__column-3 {
       transition: all 0.3s ease;
       position: relative;
-      padding: 67px 75px 67px 45px;
+      padding: 67px 75px 67px 75px;
    }
 
    &__title-1 {
@@ -921,6 +921,12 @@ body {
 
    .block__title-1 {
       background: url(../img/icons/injection_b_r.svg) 100px 27px no-repeat;
+   }
+
+   .block__column-1,
+   .block__column-2,
+   .block__column-3 {
+      height: auto;
    }
 
    .column__block {
